@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyber Defense: jogo educativo de cibersegurança para Smart Homes.">
+  <title>Cyber Defense | Proteja sua Smart Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" data-action="home" aria-label="Voltar ao início">
+        <span class="brand-mark">⌁</span>
+        <span>CYBER<span>DEFENSE</span></span>
+      </a>
+      <div class="topbar-meta">
+        <span class="live-dot"></span>
+        <span>SIMULAÇÃO OFFLINE</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="screen-home" class="screen active">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> OPERAÇÃO RESIDENCIAL // 01</p>
+            <h1>Proteja sua<br><strong>Smart Home.</strong></h1>
+            <p class="hero-text">Uma ameaça pode estar escondida em cada conexão. Investigue os dispositivos, reconheça os riscos e fortaleça a casa antes que seja tarde.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-action="start">INICIAR MISSÃO <span>→</span></button>
+              <button class="btn btn-ghost" data-action="howto">COMO JOGAR <span>?</span></button>
+              <button class="btn btn-ghost" data-action="intel-open">CENTRAL DE ESTUDOS <span>⌘</span></button>
+            </div>
+            <div class="course-note"><span class="course-icon">◈</span><span><b>ATIVIDADE EDUCACIONAL</b><br>Técnico em Desenvolvimento de Sistemas — Internet das Coisas (IoT)</span></div>
+          </div>
+          <div class="house-visual" aria-label="Ilustração de uma casa inteligente">
+            <div class="scan-ring ring-one"></div><div class="scan-ring ring-two"></div>
+            <div class="house-card">
+              <div class="house-roof"></div>
+              <div class="house-body">
+                <span class="window window-a"></span><span class="window window-b"></span>
+                <span class="door"></span><span class="sensor sensor-a">◉</span><span class="sensor sensor-b">◉</span>
+                <span class="wifi">)))</span>
+              </div>
+            </div>
+            <div class="signal signal-one">CAM 01 <i></i></div>
+            <div class="signal signal-two">NET SECURE <i></i></div>
+            <div class="signal signal-three">IOT / 06 <i></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-howto" class="screen narrow-screen">
+        <div class="section-heading"><p class="eyebrow">PROTOCOLO DE OPERAÇÃO</p><h2>Como jogar</h2><p>Você tem três objetivos em cada dispositivo vulnerável:</p></div>
+        <div class="howto-grid">
+          <article><span>01</span><h3>Identifique</h3><p>Encontre a falha de segurança na situação apresentada.</p></article>
+          <article><span>02</span><h3>Reconheça</h3><p>Associe a vulnerabilidade ao risco que ela representa.</p></article>
+          <article><span>03</span><h3>Proteja</h3><p>Escolha a medida que reduz o risco de forma adequada.</p></article>
+        </div>
+        <div class="callout"><strong>MISSÃO:</strong> investigar 6 dispositivos. Cinco possuem vulnerabilidades e um já está protegido. A pontuação máxima é 100.</div>
+        <button class="btn btn-primary" data-action="start">ENTENDI — INICIAR <span>→</span></button>
+      </section>
+
+      <section id="screen-briefing" class="screen narrow-screen">
+        <div class="briefing-icon">盾</div>
+        <p class="eyebrow">BRIEFING DE SEGURANÇA</p>
+        <h2>Uma residência foi comprometida.</h2>
+        <p class="briefing-text">Uma residência inteligente acaba de passar por uma auditoria. Foram identificados possíveis problemas em dispositivos conectados. Sua missão é analisar os equipamentos, reconhecer as ameaças e aplicar as proteções corretas antes que a segurança da casa seja comprometida.</p>
+        <div class="briefing-stats"><span><b>06</b> DISPOSITIVOS</span><span><b>05</b> VULNERABILIDADES</span><span><b>50</b> PONTOS BASE</span></div>
+        <button class="btn btn-primary" data-action="mission">ABRIR CENTRAL DE MONITORAMENTO <span>→</span></button>
+      </section>
+
+      <section id="screen-mission" class="screen">
+        <div class="mission-header">
+          <div><p class="eyebrow">CENTRAL DE MONITORAMENTO // CASA 042</p><h2>Mapa da residência</h2></div>
+          <div class="score-panel"><span>SEGURANÇA GERAL</span><strong id="score-display">0%</strong><div class="progress"><i id="score-bar"></i></div></div>
+        </div>
+        <div class="mission-layout">
+          <div class="floorplan">
+            <div class="room room-living"><small>SALA DE ESTAR</small><span class="room-icon">▣</span><button class="device-pin pin-tv" data-device="tv" aria-label="Investigar Smart TV">▣<b>TV</b></button><button class="device-pin pin-assistant" data-device="assistant" aria-label="Investigar Assistente virtual">◉<b>ASSIST.</b></button></div>
+            <div class="room room-office"><small>ESCRITÓRIO</small><button class="device-pin pin-router" data-device="router" aria-label="Investigar Roteador Wi-Fi">⌁<b>ROTEADOR</b></button></div>
+            <div class="room room-bedroom"><small>QUARTO</small><button class="device-pin pin-camera" data-device="camera" aria-label="Investigar Câmera">◉<b>CÂMERA</b></button></div>
+            <div class="room room-entry"><small>ENTRADA</small><button class="device-pin pin-lock" data-device="lock" aria-label="Investigar Fechadura eletrônica">▣<b>FECHADURA</b></button></div>
+            <div class="room room-garden"><small>ÁREA EXTERNA</small><button class="device-pin pin-lamp" data-device="lamp" aria-label="Investigar Lâmpada inteligente">✦<b>LÂMPADA</b></button></div>
+            <div class="connection-line line-a"></div><div class="connection-line line-b"></div>
+          </div>
+          <aside class="device-list"><div class="list-title"><span>DISPOSITIVOS</span><span id="device-count">0/6</span></div><div id="device-cards"></div><div class="legend"><span><i class="dot dot-red"></i>VULNERÁVEL</span><span><i class="dot dot-yellow"></i>ATENÇÃO</span><span><i class="dot dot-green"></i>PROTEGIDO</span></div></aside>
+        </div>
+        <div class="mission-footer"><span><span class="pulse"></span> Selecione um dispositivo para iniciar a inspeção</span><div class="mission-footer-actions"><button class="btn btn-ghost small" data-action="intel-open">CENTRAL DE INTELIGÊNCIA</button><button class="btn btn-ghost small" data-action="finish" id="finish-btn" disabled>FINALIZAR MISSÃO</button></div></div>
+      </section>
+
+      <section id="screen-report" class="screen">
+        <div class="report-heading"><p class="eyebrow">CYBER DEFENSE // ENCERRAMENTO</p><h2>Relatório de segurança</h2><p>Análise concluída. Veja o impacto das suas decisões.</p></div>
+        <div class="report-summary"><div class="final-score"><span>PONTUAÇÃO FINAL</span><strong id="final-score">0</strong><small>/ 100</small></div><div><span class="classification-label">CLASSIFICAÇÃO</span><h3 id="classification">—</h3><p id="classification-text">—</p></div><div class="report-metrics"><span><b id="vuln-count">0</b>VULNERABILIDADES</span><span><b id="threat-count">0</b>AMEAÇAS</span><span><b id="protection-count">0</b>PROTEÇÕES</span></div></div>
+        <div class="report-table-wrap"><table><thead><tr><th>DISPOSITIVO</th><th>VULNERABILIDADE</th><th>AMEAÇA IDENTIFICADA</th><th>MEDIDA ESCOLHIDA</th><th>RESULTADO</th></tr></thead><tbody id="report-body"></tbody></table></div>
+        <div class="recommendations"><h3>RECOMENDAÇÕES PERSONALIZADAS</h3><ul id="recommendation-list"></ul></div>
+        <div class="report-actions"><button class="btn btn-primary" data-action="restart">JOGAR NOVAMENTE <span>↻</span></button><button class="btn btn-ghost" data-action="answers">VER RESPOSTAS</button><button class="btn btn-ghost" data-action="concepts">REVISAR CONCEITOS</button></div>
+      </section>
+    </main>
+  </div>
+  <div id="challenge-modal" class="modal-backdrop" hidden><div class="challenge-modal"><button class="modal-close" data-action="close-modal" aria-label="Fechar">×</button><div class="challenge-top"><div><p class="eyebrow" id="challenge-kicker">INSPEÇÃO</p><h2 id="challenge-title">Dispositivo</h2></div><div class="stepper"><span class="step active">01</span><i></i><span class="step">02</span><i></i><span class="step">03</span></div></div><div id="challenge-content"></div></div></div>
+  <div id="intel-modal" class="modal-backdrop" hidden><div class="intel-modal"><button class="modal-close" data-action="intel-close" aria-label="Fechar">×</button><div class="intel-header"><div><p class="eyebrow">BASE DE CONHECIMENTO // OFFLINE</p><h2>Central de inteligência</h2><p>Aprenda, mapeie e registre evidências da sua investigação.</p></div><div class="intel-badge">◈<small>ANALISTA</small></div></div><nav class="intel-tabs"><button class="intel-tab active" data-intel-tab="overview">MAPA DE RISCO</button><button class="intel-tab" data-intel-tab="glossary">GLOSSÁRIO</button><button class="intel-tab" data-intel-tab="notebook">CADERNO</button></nav><div id="intel-content"></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
